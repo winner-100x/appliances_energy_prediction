@@ -70,6 +70,32 @@ Luis M. Candanedo, Veronique Feldheim, Dominique Deramaix, Data driven predictio
 
 ## Environment Setup
 
+
+Step 1: Create Environment
+
+conda create --name energyenv python=3.9 -y
+
+Step 2: Activate Environment 
+
+conda activate energyenv
+
+Step 3: Install required packages
+
+```bash
+pip install setuptools wheel --- if your conda base is old
+
+
+pip install torch==1.13.1+cpu torchvision==0.14.1+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html 
+
+pip install autogluon streamlit jupyter
+
+Test by typing "python"
+
+from autogluon.tabular import TabularDataset, TabularPredictor
+
+streamlit hello
+
+
 ## Code Structure
 
 ## Exploratory Data Anaysis (EDA)
